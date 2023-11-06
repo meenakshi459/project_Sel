@@ -1,0 +1,27 @@
+1) Basic Xpath: 
+
+a) Attribute based xpath:        
+ Syntax:   //tagname[@attributeName='attributeValue']        
+ Example:  //input[@id='password']
+           //input[@id='twotabsearchtextbox']
+        
+        
+      b) Text based Xpath:
+         Syntax:  //tagname[text()='textValue'] 
+        Example:  //a[text()='Leads']
+                 //span[text()='Hello, sign in']
+               
+       c) Partial Attribute based Xpath:
+          Syntax: //tagname[contains(@attributename,'attributevalue')]
+          Example: //input[contains(@class,'Submit')]
+                   //input[contains(@id,'searchtextbox')]   
+                   
+       d) Partial Text based Xpath: 
+           Syntax:  //tagname[contains(text(),'textvalue')]
+           Example: //a[contains(text(),'Create')]
+                    //a[contains(text(),'Deals')]
+                   //select[contains(@id,'dataSource')]
+              
+       e) Index based Xpath: 
+                 Syntax: (//tagname[text()='textValue'])[index] 
+                 Example: (//a[contains(text(),'Lead')])[3]
